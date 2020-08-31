@@ -38,6 +38,7 @@
 /api/.yarn-integrity
 # Ignore .env file containing credentials.
 /api/.env*
+/api/config/cloudinary.yml
 # Ignore Mac and Linux file system files
 */api/.swp
 /api.DS_Store
