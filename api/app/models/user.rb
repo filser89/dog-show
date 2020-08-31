@@ -2,6 +2,7 @@ class User < ApplicationRecord
   has_many :dogs, dependent: :destroy
   has_many :reviews, dependent: :destroy
   has_many :reviews_as_owner, through: :dogs, source: :reviews
+  has_many_attached :photos
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
